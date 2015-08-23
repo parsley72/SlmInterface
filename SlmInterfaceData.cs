@@ -56,18 +56,16 @@ namespace SlmInterfaceData
         {
             Debug.WriteLine("GetSlmData(): strFile = " + strFile);
             
-/*
-            for (int i = 0; i < src.Length; i++)
-            {
-                src.Samples[i].x = i;
-                src.Samples[i].y = (float)(((float)200 * Math.Sin((idx + 1) * (i + 1.0) * 48 / src.Length)));
-            }
-*/
+            //for (int i = 0; i < src.Length; i++)
+            //{
+            //    src.Samples[i].x = i;
+            //    src.Samples[i].y = (float)(((float)200 * Math.Sin((idx + 1) * (i + 1.0) * 48 / src.Length)));
+            //}
 
-//            string strFile = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            //string strFile = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
-//            List<SReplayData> replayData = new List<SReplayData>();
-//            float fPeriod;
+            //List<SReplayData> replayData = new List<SReplayData>();
+            //float fPeriod;
 
             int nFileBinaryVersion = 0;
             int nFileType;
@@ -311,47 +309,42 @@ stSpeechData_t
             }
             else
             {
-//                Debug.WriteLine(replayData.Count + " over " + (replayData[replayData.Count - 1].tTime - replayData[0].tTime).TotalSeconds + " seconds");
+                //Debug.WriteLine(replayData.Count + " over " + (replayData[replayData.Count - 1].tTime - replayData[0].tTime).TotalSeconds + " seconds");
 
-/*
-                DateTime   qFirstTime = replayData[0].qTime;
-                DateTime   qStartTime = DateTime.Now; // currentDateTime();
-                for (int nCount = 0; nCount < replayData.Count; ++nCount)
-                {
-                    if (_bStop)
-                        return;
+                //DateTime qFirstTime = replayData[0].qTime;
+                //DateTime qStartTime = DateTime.Now; // currentDateTime();
+                //for (int nCount = 0; nCount < replayData.Count; ++nCount)
+                //{
+                //    if (_bStop)
+                //        return;
 
-                    Debug.WriteLine(" " + replayData[nCount].qTime + " " + replayData[nCount].fData);
-                    updateData(replayData[nCount].qTime, replayData[nCount].fData);
+                //    Debug.WriteLine(" " + replayData[nCount].qTime + " " + replayData[nCount].fData);
+                //    updateData(replayData[nCount].qTime, replayData[nCount].fData);
 
-                    qint64 msecsToNext = qFirstTime.msecsTo(replayData[nCount].qTime);
-                    qint64 msecsFrom = qStartTime.msecsTo(DateTime.Now);
-            //        qDebug() << msecsToNext;
-            //        qDebug() << msecsFrom;
-                    if (msecsToNext > msecsFrom)
-                    {
-                        int msecs = msecsToNext - msecsFrom;
-                        Thread.Sleep(msecs);
-                    }
-                }
-*/
+                //    qint64 msecsToNext = qFirstTime.msecsTo(replayData[nCount].qTime);
+                //    qint64 msecsFrom = qStartTime.msecsTo(DateTime.Now);
+                //    qDebug() << msecsToNext;
+                //    qDebug() << msecsFrom;
+                //    if (msecsToNext > msecsFrom)
+                //    {
+                //        int msecs = msecsToNext - msecsFrom;
+                //        Thread.Sleep(msecs);
+                //    }
+                //}
 
-/*
-                SortedList<DateTime, float> data = new SortedList<DateTime, float>();
+                //SortedList<DateTime, float> data = new SortedList<DateTime, float>();
 
-                for (int i = 0; i < src.Length; i++)
-                {
-                    data.Add(replayData[i].tTime, replayData[i].fData);
+                //for (int i = 0; i < src.Length; i++)
+                //{
+                //    data.Add(replayData[i].tTime, replayData[i].fData);
 
-                    src.Samples[i].x = i;
-                    src.Samples[i].y = replayData[i].fData;
-                }
-*/
+                //    src.Samples[i].x = i;
+                //    src.Samples[i].y = replayData[i].fData;
+                //}
             }
-/*
-            replayEnded();
-            deleteLater();
-*/
+
+            //replayEnded();
+            //deleteLater();
 
             return true;
         }
