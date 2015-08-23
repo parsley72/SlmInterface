@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlmInterfaceTestCS", "SlmInterfaceTestCS.csproj", "{714DF61C-47CD-4B65-883D-7E2146846653}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{714DF61C-47CD-4B65-883D-7E2146846653}.Debug|x86.ActiveCfg = Debug|x86
+		{714DF61C-47CD-4B65-883D-7E2146846653}.Debug|x86.Build.0 = Debug|x86
+		{714DF61C-47CD-4B65-883D-7E2146846653}.Release|x86.ActiveCfg = Release|x86
+		{714DF61C-47CD-4B65-883D-7E2146846653}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
