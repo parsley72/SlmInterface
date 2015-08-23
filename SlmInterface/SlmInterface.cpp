@@ -19,6 +19,31 @@ static HANDLE s_hHeap = NULL;
 #define DllExport __declspec(dllexport)
 //#define DllImport __declspec(dllimport)
 
+typedef struct
+{
+    char	strItem[128];
+    int		nItemData;
+    float   fPeriod;
+	int		nPeriodInMSecs;
+} SPeriodInfo;
+
+static SPeriodInfo PeriodInfo[] =
+{
+    {"20 ms",  ID_50PS, 0.020f, 20},
+    {"50 ms",  ID_20PS, 0.050f, 50},
+    {"100 ms", ID_10PS, 0.100f, 100},
+    {"200 ms", ID_5PS, 0.200f, 200},
+    {"500 ms", ID_2PS, 0.500f, 500},
+    {"1 sec",  ID_1S, 1.0f, 1000},
+    {"2 sec",  ID_2S, 2.0f, 2000},
+    {"5 sec",  ID_5S, 5.0f, 5000},
+    {"10 sec", ID_10S, 10.0f, 10000},
+    {"15 sec", ID_15S, 15.0f, 15000},
+    {"20 sec", ID_20S, 20.0f, 20000},
+    {"30 sec", ID_30S, 30.0f, 30000},
+    {"1 min",  ID_1MIN, 60.0f, 60000},
+};
+
 void CopySlmFileHeader(stFileHeader_t &src, slmSFileHeader_t &dest)
 {
     dest.nSerialNumber = src.nSerialNumber;
